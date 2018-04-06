@@ -1,3 +1,4 @@
+C:\Code\FTP\GoogleDriveDownloader\obj\Debug\FTP.GoogleDriveDownloader.csproj.CoreCompileInputs.cache
 C:\Code\FTP\GoogleDriveDownloader\bin\Debug\Credentials\client_secret.json
 C:\Code\FTP\GoogleDriveDownloader\bin\Debug\log4net.config
 C:\Code\FTP\GoogleDriveDownloader\bin\Debug\GoogleDriveDownloader.dll.config
@@ -22,6 +23,6 @@ C:\Code\FTP\GoogleDriveDownloader\bin\Debug\Google.Apis.Core.xml
 C:\Code\FTP\GoogleDriveDownloader\bin\Debug\Google.Apis.Drive.v3.xml
 C:\Code\FTP\GoogleDriveDownloader\bin\Debug\log4net.xml
 C:\Code\FTP\GoogleDriveDownloader\bin\Debug\Newtonsoft.Json.xml
-C:\Code\FTP\GoogleDriveDownloader\obj\Debug\FTP.GoogleDriveDownloader.csproj.CoreCompileInputs.cache
 C:\Code\FTP\GoogleDriveDownloader\obj\Debug\GoogleDriveDownloader.dll
 C:\Code\FTP\GoogleDriveDownloader\obj\Debug\GoogleDriveDownloader.pdb
+C:\Code\FTP\GoogleDriveDownloader\obj\Debug\FTP.GoogleDriveDownloader.csprojResolveAssemblyReference.cache

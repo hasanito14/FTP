@@ -1,4 +1,4 @@
-﻿using DataStorage.Helper;
+﻿using FTP.DataStorage.Helper;
 using System;
 using System.Data.SQLite;
 
@@ -21,7 +21,12 @@ namespace FTP.DataStorage
 
                 connection.Open();
 
-                string sql = "CREATE TABLE IF NOT EXISTS Files (ID INTEGER PRIMARY KEY ASC AUTOINCREMENT,NAME varchar(100) NOT NULL, FileId varchar(50) NOT NULL, Status INT default 0, LastModified TEXT NOT NULL)";
+                string sql = "CREATE TABLE IF NOT EXISTS Files " +
+                    "(ID INTEGER PRIMARY KEY ASC AUTOINCREMENT," +
+                    "NAME varchar(100) NOT NULL, " +
+                    "FileId varchar(50) NOT NULL," +
+                    "Status INT default 0," +
+                    "LastModified TEXT NOT NULL)";
 
                 SQLiteCommand command = new SQLiteCommand(sql, connection);
                 command.ExecuteNonQuery();

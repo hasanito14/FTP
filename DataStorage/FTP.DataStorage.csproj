@@ -51,7 +51,7 @@
   <ItemGroup>
     <Compile Include="DBInitiate.cs" />
     <Compile Include="Helper\DBConnection.cs" />
-    <Compile Include="Store.cs" />
+    <Compile Include="StoreService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,6 +1,6 @@
 ﻿using System.Data.SQLite;
 
-namespace DataStorage.Helper
+namespace FTP.DataStorage.Helper
 {
     public static class DBConnection
     {

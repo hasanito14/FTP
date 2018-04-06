@@ -1,3 +1,4 @@
+C:\Code\FTP\FTP\obj\Debug\FTP.csproj.CoreCompileInputs.cache
 C:\Code\FTP\FTP\bin\Debug\Credentials\client_secret.json
 C:\Code\FTP\FTP\bin\Debug\log4net.config
 C:\Code\FTP\FTP\bin\Debug\FTP.exe.config
@@ -29,6 +30,5 @@ C:\Code\FTP\FTP\bin\Debug\Google.Apis.Drive.v3.xml
 C:\Code\FTP\FTP\bin\Debug\log4net.xml
 C:\Code\FTP\FTP\bin\Debug\Newtonsoft.Json.xml
 C:\Code\FTP\FTP\obj\Debug\FTP.csprojResolveAssemblyReference.cache
-C:\Code\FTP\FTP\obj\Debug\FTP.csproj.CoreCompileInputs.cache
 C:\Code\FTP\FTP\obj\Debug\FTP.exe
 C:\Code\FTP\FTP\obj\Debug\FTP.pdb

@@ -1,3 +1,4 @@
+C:\Code\FTP\DataStorage\obj\Debug\FTP.DataStorage.csproj.CoreCompileInputs.cache
 C:\Code\FTP\DataStorage\bin\Debug\Credentials\client_secret.json
 C:\Code\FTP\DataStorage\bin\Debug\log4net.config
 C:\Code\FTP\DataStorage\bin\Debug\DataStorage.dll
@@ -25,6 +26,5 @@ C:\Code\FTP\DataStorage\bin\Debug\Google.Apis.xml
 C:\Code\FTP\DataStorage\bin\Debug\Google.Apis.Core.xml
 C:\Code\FTP\DataStorage\bin\Debug\Newtonsoft.Json.xml
 C:\Code\FTP\DataStorage\obj\Debug\FTP.DataStorage.csprojResolveAssemblyReference.cache
-C:\Code\FTP\DataStorage\obj\Debug\FTP.DataStorage.csproj.CoreCompileInputs.cache
 C:\Code\FTP\DataStorage\obj\Debug\DataStorage.dll
 C:\Code\FTP\DataStorage\obj\Debug\DataStorage.pdb

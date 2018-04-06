@@ -3,6 +3,7 @@ using Google.Apis.Auth.OAuth2;
 using Google.Apis.Drive.v3;
 using Google.Apis.Services;
 using Google.Apis.Util.Store;
+using GoogleDriveDownloader.Model;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -24,7 +25,6 @@ namespace FTP.GoogleDriveDownloader
             {
                 Logger.log.Error("UserName is missing");
             }
-
 
             string[] Scopes = { DriveService.Scope.DriveReadonly };
             string ApplicationName = "Drive API .NET Quickstart";
@@ -65,13 +65,34 @@ namespace FTP.GoogleDriveDownloader
 
         }
 
-        public static IList<Google.Apis.Drive.v3.Data.File> GetFiles(DriveService service, int pageSize)
-        {
+        //public static IList<Google.Apis.Drive.v3.Data.File> GetFiles(DriveService service, int pageSize)
+        //{
 
+        //    FilesResource.ListRequest listRequest = service.Files.List();
+        //    listRequest.PageSize = pageSize;
+        //    listRequest.Fields = "nextPageToken, files(id, name)";
+        //    IList<Google.Apis.Drive.v3.Data.File> files = listRequest.Execute().Files;
+
+        //    return files;
+        //}
+
+        public static List<FileModel> GetFiles(DriveService service, int pageSize)
+        {
+            List<FileModel> files = new List<FileModel>();
             FilesResource.ListRequest listRequest = service.Files.List();
             listRequest.PageSize = pageSize;
             listRequest.Fields = "nextPageToken, files(id, name)";
-            IList<Google.Apis.Drive.v3.Data.File> files = listRequest.Execute().Files;
+            IList<Google.Apis.Drive.v3.Data.File> gfiles = listRequest.Execute().Files;
+
+            if (gfiles != null && gfiles.Count > 0)
+            {
+                foreach (var gfile in gfiles)
+                {
+                    FileModel file = new FileModel { Id = gfile.Id, Name = gfile.Name };
+
+                    files.Add(file);
+                }
+            }
 
             return files;
         }

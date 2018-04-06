@@ -80,6 +80,7 @@
   <ItemGroup>
     <Compile Include="DriveServices.cs" />
     <Compile Include="Helper\Logger.cs" />
+    <Compile Include="Model\File.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
