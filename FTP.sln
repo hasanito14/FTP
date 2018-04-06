@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FTP.GoogleDriveDownloader",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FTP.DataStorage", "DataStorage\FTP.DataStorage.csproj", "{28A2C864-882A-48FF-8D6B-2D8CF843325E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FTP.Helper", "FTP.Helper\FTP.Helper.csproj", "{B3CA5CE9-2E81-4BAA-B7E9-4DA66BD70AC7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{28A2C864-882A-48FF-8D6B-2D8CF843325E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28A2C864-882A-48FF-8D6B-2D8CF843325E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28A2C864-882A-48FF-8D6B-2D8CF843325E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3CA5CE9-2E81-4BAA-B7E9-4DA66BD70AC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3CA5CE9-2E81-4BAA-B7E9-4DA66BD70AC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3CA5CE9-2E81-4BAA-B7E9-4DA66BD70AC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3CA5CE9-2E81-4BAA-B7E9-4DA66BD70AC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

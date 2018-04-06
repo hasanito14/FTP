@@ -32,3 +32,5 @@ C:\Code\FTP\FTP\bin\Debug\Newtonsoft.Json.xml
 C:\Code\FTP\FTP\obj\Debug\FTP.csprojResolveAssemblyReference.cache
 C:\Code\FTP\FTP\obj\Debug\FTP.exe
 C:\Code\FTP\FTP\obj\Debug\FTP.pdb
+C:\Code\FTP\FTP\bin\Debug\FTP.Helper.dll
+C:\Code\FTP\FTP\bin\Debug\FTP.Helper.pdb

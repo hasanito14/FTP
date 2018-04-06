@@ -80,7 +80,6 @@
   <ItemGroup>
     <Compile Include="DriveServices.cs" />
     <Compile Include="Helper\Logger.cs" />
-    <Compile Include="Model\File.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -92,6 +91,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FTP.Helper\FTP.Helper.csproj">
+      <Project>{B3CA5CE9-2E81-4BAA-B7E9-4DA66BD70AC7}</Project>
+      <Name>FTP.Helper</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

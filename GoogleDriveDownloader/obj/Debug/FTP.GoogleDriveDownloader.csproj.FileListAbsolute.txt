@@ -26,3 +26,5 @@ C:\Code\FTP\GoogleDriveDownloader\bin\Debug\Newtonsoft.Json.xml
 C:\Code\FTP\GoogleDriveDownloader\obj\Debug\GoogleDriveDownloader.dll
 C:\Code\FTP\GoogleDriveDownloader\obj\Debug\GoogleDriveDownloader.pdb
 C:\Code\FTP\GoogleDriveDownloader\obj\Debug\FTP.GoogleDriveDownloader.csprojResolveAssemblyReference.cache
+C:\Code\FTP\GoogleDriveDownloader\bin\Debug\FTP.Helper.dll
+C:\Code\FTP\GoogleDriveDownloader\bin\Debug\FTP.Helper.pdb

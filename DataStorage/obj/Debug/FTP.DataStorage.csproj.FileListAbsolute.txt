@@ -28,3 +28,5 @@ C:\Code\FTP\DataStorage\bin\Debug\Newtonsoft.Json.xml
 C:\Code\FTP\DataStorage\obj\Debug\FTP.DataStorage.csprojResolveAssemblyReference.cache
 C:\Code\FTP\DataStorage\obj\Debug\DataStorage.dll
 C:\Code\FTP\DataStorage\obj\Debug\DataStorage.pdb
+C:\Code\FTP\DataStorage\bin\Debug\FTP.Helper.dll
+C:\Code\FTP\DataStorage\bin\Debug\FTP.Helper.pdb

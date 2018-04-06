@@ -1,5 +1,6 @@
 ﻿using FTP.DataStorage.Helper;
-using GoogleDriveDownloader.Model;
+using FTP.GoogleDriveDownloader.Helper;
+using FTP.Helper.Model;
 using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
@@ -52,47 +53,12 @@ namespace FTP.DataStorage
             }
             catch (Exception ex)
             {
-                ;
+                Logger.log.Error("Files information couldnt be saved in DB", ex);
             }
 
             return saved;
 
         }
-        /*
-         * 
-         *                     "(ID INTEGER PRIMARY KEY ASC AUTOINCREMENT," +
-                    "NAME varchar(100) NOT NULL, " +
-                    "FileId varchar(50) NOT NULL," +
-                    "Status INT default 0," +
-                    "LastModified TEXT NOT NULL)";
-                    static int AddUsers(IEnumerable<User> users)
-{
-    var results = new List<int>();
-    string sqlInsertUsers = @"INSERT INTO [Users] ([Name]) VALUES (@Name);";
-  
-    using (var cn = new SQLiteConnection(_connectionString))
-    {
-        cn.Open();
-        using(var transaction = cn.BeginTransaction())
-        {
-            using (var cmd = cn.CreateCommand())
-            {
-               cmd.CommandText = sqlInsertUsers;
-               cmd.Parameters.AddWithValue("@Name", "UserName");
-  
-               foreach (var user in users)
-               {
-                   cmd.Parameters["@Name"] = user.Name;
-                   results.Add(cmd.ExecuteNonQuery());
-               }
-            }
-            transaction.Commit();
-        }
-    }
-    return results.Sum();
-}
-*/
-
 
         private string CreateSQL(string sql)
         {

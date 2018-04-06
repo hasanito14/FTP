@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DataStorage")]
+[assembly: AssemblyTitle("FTP.Helper")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("DataStorage")]
+[assembly: AssemblyProduct("FTP.Helper")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("28a2c864-882a-48ff-8d6b-2d8cf843325e")]
+[assembly: Guid("b3ca5ce9-2e81-4baa-b7e9-4da66bd70ac7")]
 
 // Version information for an assembly consists of the following four values:
 //

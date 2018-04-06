@@ -1,9 +1,9 @@
 ﻿using FTP.GoogleDriveDownloader.Helper;
+using FTP.Helper.Model;
 using Google.Apis.Auth.OAuth2;
 using Google.Apis.Drive.v3;
 using Google.Apis.Services;
 using Google.Apis.Util.Store;
-using GoogleDriveDownloader.Model;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -13,8 +13,6 @@ namespace FTP.GoogleDriveDownloader
 {
     public static class DriveServices
     {
-
-
         public static DriveService GetAuthenticaticated(string clientSecret, string userName)
         {
             if (clientSecret == null)
@@ -65,16 +63,17 @@ namespace FTP.GoogleDriveDownloader
 
         }
 
-        //public static IList<Google.Apis.Drive.v3.Data.File> GetFiles(DriveService service, int pageSize)
-        //{
+        /*
+        public static IList<Google.Apis.Drive.v3.Data.File> GetFiles(DriveService service, int pageSize)
+        {
 
-        //    FilesResource.ListRequest listRequest = service.Files.List();
-        //    listRequest.PageSize = pageSize;
-        //    listRequest.Fields = "nextPageToken, files(id, name)";
-        //    IList<Google.Apis.Drive.v3.Data.File> files = listRequest.Execute().Files;
+            FilesResource.ListRequest listRequest = service.Files.List();
+            listRequest.PageSize = pageSize;
+            listRequest.Fields = "nextPageToken, files(id, name)";
+            IList<Google.Apis.Drive.v3.Data.File> files = listRequest.Execute().Files;
 
-        //    return files;
-        //}
+            return files;
+        }*/
 
         public static List<FileModel> GetFiles(DriveService service, int pageSize)
         {

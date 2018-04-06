@@ -1,4 +1,5 @@
-﻿namespace GoogleDriveDownloader.Model
+﻿
+namespace FTP.Helper.Model
 {
     public class FileModel
     {
