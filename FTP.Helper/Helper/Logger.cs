@@ -1,4 +1,4 @@
-﻿namespace FTP.GoogleDriveDownloader.Helper
+﻿namespace FTP.Helper.Helper
 {
     public static class Logger
     {

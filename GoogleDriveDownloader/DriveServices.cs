@@ -1,4 +1,4 @@
-﻿using FTP.GoogleDriveDownloader.Helper;
+﻿using FTP.Helper.Helper;
 using FTP.Helper.Model;
 using Google.Apis.Auth.OAuth2;
 using Google.Apis.Drive.v3;
@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Threading;
 
-namespace FTP.GoogleDriveDownloader
+namespace FTP.GoogleDriveService
 {
     public static class DriveServices
     {

@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FTP", "FTP\FTP.csproj", "{6C074762-1032-4390-96EB-4E9C0F9BCBAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FTP.GoogleDriveDownloader", "GoogleDriveDownloader\FTP.GoogleDriveDownloader.csproj", "{F1539267-3989-44F1-BD7F-34AF126AA6A4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FTP.GoogleDriveService", "GoogleDriveDownloader\FTP.GoogleDriveService.csproj", "{F1539267-3989-44F1-BD7F-34AF126AA6A4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FTP.DataStorage", "DataStorage\FTP.DataStorage.csproj", "{28A2C864-882A-48FF-8D6B-2D8CF843325E}"
 EndProject

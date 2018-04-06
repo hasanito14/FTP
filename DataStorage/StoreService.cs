@@ -1,5 +1,5 @@
 ﻿using FTP.DataStorage.Helper;
-using FTP.GoogleDriveDownloader.Helper;
+using FTP.Helper.Helper;
 using FTP.Helper.Model;
 using System;
 using System.Collections.Generic;
@@ -34,21 +34,12 @@ namespace FTP.DataStorage
                 SQLiteCommand cmd = new SQLiteCommand(sql);
                 cmd.Connection = connection;
                 connection.Open();
-                using (var transaction = connection.BeginTransaction())
+
+                foreach (var file in files)
                 {
-
-                    foreach (var file in files)
-                    {
-                        cmd.Parameters.AddWithValue("@Name", file.Name);
-                        cmd.Parameters.AddWithValue("@FileId", file.Id);
-                        cmd.Parameters.AddWithValue("@Status", 1);
-                        cmd.Parameters.AddWithValue("@LastModified", DateTime.UtcNow);
-                        cmd.ExecuteNonQuery();
-                    }
-
-                    transaction.Commit();
-                    saved = true;
+                    SaveFile(file, cmd, connection);
                 }
+
                 connection.Close();
             }
             catch (Exception ex)
@@ -58,6 +49,30 @@ namespace FTP.DataStorage
 
             return saved;
 
+        }
+
+        public bool SaveFile(FileModel file, SQLiteCommand cmd, SQLiteConnection connection)
+        {
+            try
+            {
+                using (var transaction = connection.BeginTransaction())
+                {
+                    cmd.Parameters.AddWithValue("@Name", file.Name);
+                    cmd.Parameters.AddWithValue("@FileId", file.Id);
+                    cmd.Parameters.AddWithValue("@Status", 1);
+                    cmd.Parameters.AddWithValue("@LastModified", DateTime.UtcNow);
+                    cmd.ExecuteNonQuery();
+
+                    transaction.Commit();
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.log.Error(file.Id + ": File information couldnt be saved in DB");
+            }
+
+
+            return true;
         }
 
         private string CreateSQL(string sql)

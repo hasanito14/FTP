@@ -33,7 +33,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a" />
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="SQLite.Designer">
       <HintPath>.\SQLite.Designer.dll</HintPath>
     </Reference>
@@ -60,11 +62,14 @@
       <Project>{B3CA5CE9-2E81-4BAA-B7E9-4DA66BD70AC7}</Project>
       <Name>FTP.Helper</Name>
     </ProjectReference>
-    <ProjectReference Include="..\GoogleDriveDownloader\FTP.GoogleDriveDownloader.csproj">
+    <ProjectReference Include="..\GoogleDriveDownloader\FTP.GoogleDriveService.csproj">
       <Project>{f1539267-3989-44f1-bd7f-34af126aa6a4}</Project>
-      <Name>FTP.GoogleDriveDownloader</Name>
+      <Name>FTP.GoogleDriveService</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -23,8 +23,8 @@ namespace FTP.DataStorage
 
                 string sql = "CREATE TABLE IF NOT EXISTS Files " +
                     "(ID INTEGER PRIMARY KEY ASC AUTOINCREMENT," +
-                    "NAME varchar(100) NOT NULL, " +
-                    "FileId varchar(50) NOT NULL," +
+                    "NAME varchar(100) NOT NULL UNIQUE, " +
+                    "FileId varchar(50) NOT NULL UNIQUE," +
                     "Status INT default 0," +
                     "LastModified TEXT NOT NULL)";
 
