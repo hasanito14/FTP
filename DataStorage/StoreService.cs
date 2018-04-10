@@ -66,7 +66,7 @@ namespace FTP.DataStorage
                     transaction.Commit();
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 Logger.log.Error(file.Id + ": File information couldnt be saved in DB");
             }

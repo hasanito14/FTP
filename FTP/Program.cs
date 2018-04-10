@@ -1,6 +1,5 @@
 ﻿using FTP.DataStorage;
-using FTP.GoogleDriveService;
-using System;
+using FTP.SFTP;
 namespace FTP
 {
     class Program
@@ -8,6 +7,8 @@ namespace FTP
 
         static void Main(string[] args)
         {
+            /* FOR GOOGLE DRIVE------
+             * 
             var service = DriveServices.GetAuthenticaticated("credentials/client_secret.json", "KalamKhan.1260");
 
             var storeService = new StoreService("C:\\ProgramData\\FTPApp\\FTPApp.sqlite");
@@ -30,6 +31,29 @@ namespace FTP
                 Console.WriteLine("No files found.");
             }
             Console.Read();
+            
+             */
+
+            //      Load the files from SFTP server
+            var sftpService = new SFTPService();
+            var files = sftpService.Execute();
+
+
+            //      Save file name in database 
+            var storeService = new StoreService("C:\\ProgramData\\FTPApp\\FTPApp.sqlite");
+            storeService.SaveFiles(files);
+
+            //      Get the filesname from DB
+            //----
+            //
+
+            //      Download the file
+            var result = sftpService.ExecuteDownLoad(files);
+
+            //      Change the status in DB
+
+
+            //      Create admin dash info
         }
     }
 }

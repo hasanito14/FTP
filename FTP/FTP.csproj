@@ -96,6 +96,10 @@
       <Project>{B3CA5CE9-2E81-4BAA-B7E9-4DA66BD70AC7}</Project>
       <Name>FTP.Helper</Name>
     </ProjectReference>
+    <ProjectReference Include="..\FTP.SFTP\FTP.SFTP.csproj">
+      <Project>{b354d2c8-e789-4218-b34e-3b8531299f8b}</Project>
+      <Name>FTP.SFTP</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GoogleDriveDownloader\FTP.GoogleDriveService.csproj">
       <Project>{f1539267-3989-44f1-bd7f-34af126aa6a4}</Project>
       <Name>FTP.GoogleDriveService</Name>

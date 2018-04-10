@@ -1,0 +1,13 @@
+C:\Code\FTP\FTP.SFTP\bin\Debug\FTP.SFTP.dll
+C:\Code\FTP\FTP.SFTP\bin\Debug\FTP.SFTP.pdb
+C:\Code\FTP\FTP.SFTP\bin\Debug\Renci.SshNet.dll
+C:\Code\FTP\FTP.SFTP\bin\Debug\Renci.SshNet.xml
+C:\Code\FTP\FTP.SFTP\obj\Debug\FTP.SFTP.csprojResolveAssemblyReference.cache
+C:\Code\FTP\FTP.SFTP\obj\Debug\FTP.SFTP.csproj.CoreCompileInputs.cache
+C:\Code\FTP\FTP.SFTP\obj\Debug\FTP.SFTP.dll
+C:\Code\FTP\FTP.SFTP\obj\Debug\FTP.SFTP.pdb
+C:\Code\FTP\FTP.SFTP\bin\Debug\log4net.config
+C:\Code\FTP\FTP.SFTP\bin\Debug\FTP.Helper.dll
+C:\Code\FTP\FTP.SFTP\bin\Debug\log4net.dll
+C:\Code\FTP\FTP.SFTP\bin\Debug\FTP.Helper.pdb
+C:\Code\FTP\FTP.SFTP\bin\Debug\log4net.xml
