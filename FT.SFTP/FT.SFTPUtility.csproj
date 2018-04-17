@@ -53,7 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FT.Helper\FT.Helper.csproj">
-      <Project>{B3CA5CE9-2E81-4BAA-B7E9-4DA66BD70AC7}</Project>
+      <Project>{b3ca5ce9-2e81-4baa-b7e9-4da66bd70ac7}</Project>
       <Name>FT.Helper</Name>
     </ProjectReference>
   </ItemGroup>

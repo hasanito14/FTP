@@ -43,8 +43,6 @@ C:\Code\FTP\FTP\obj\Debug\FT.csprojResolveAssemblyReference.cache
 C:\Code\FTP\FTP\obj\Debug\FT.csproj.CoreCompileInputs.cache
 C:\Code\FTP\FTP\obj\Debug\FTP.exe
 C:\Code\FTP\FTP\obj\Debug\FTP.pdb
-C:\Code\FTP\FT\obj\Debug\FT.csprojResolveAssemblyReference.cache
-C:\Code\FTP\FT\obj\Debug\FT.csproj.CoreCompileInputs.cache
 C:\Code\FTP\FT\bin\Debug\log4net.config
 C:\Code\FTP\FT\bin\Debug\Credentials\client_secret.json
 C:\Code\FTP\FT\bin\Debug\FTP.exe.config
@@ -86,5 +84,7 @@ C:\Code\FTP\FT\bin\Debug\log4net.xml
 C:\Code\FTP\FT\bin\Debug\Newtonsoft.Json.xml
 C:\Code\FTP\FT\bin\Debug\Dapper.xml
 C:\Code\FTP\FT\bin\Debug\Renci.SshNet.xml
+C:\Code\FTP\FT\obj\Debug\FT.csprojResolveAssemblyReference.cache
+C:\Code\FTP\FT\obj\Debug\FT.csproj.CoreCompileInputs.cache
 C:\Code\FTP\FT\obj\Debug\FTP.exe
 C:\Code\FTP\FT\obj\Debug\FTP.pdb
