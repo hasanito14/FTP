@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FT", "FTP\FT.csproj", "{6C074762-1032-4390-96EB-4E9C0F9BCBAC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FT", "FT\FT.csproj", "{6C074762-1032-4390-96EB-4E9C0F9BCBAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FT.GoogleDriveService", "GoogleDriveDownloader\FT.GoogleDriveService.csproj", "{F1539267-3989-44F1-BD7F-34AF126AA6A4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FT.GoogleDriveService", "FT.GoogleDriveService\FT.GoogleDriveService.csproj", "{F1539267-3989-44F1-BD7F-34AF126AA6A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FT.DataServicesSQLite", "DataStorage\FT.DataServicesSQLite.csproj", "{28A2C864-882A-48FF-8D6B-2D8CF843325E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FT.DataServicesSQLite", "FT.DataServicesSQLite\FT.DataServicesSQLite.csproj", "{28A2C864-882A-48FF-8D6B-2D8CF843325E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FT.Helper", "FTP.Helper\FT.Helper.csproj", "{B3CA5CE9-2E81-4BAA-B7E9-4DA66BD70AC7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FT.Helper", "FT.Helper\FT.Helper.csproj", "{B3CA5CE9-2E81-4BAA-B7E9-4DA66BD70AC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FT.SFTPUtility", "FTP.SFTP\FT.SFTPUtility.csproj", "{B354D2C8-E789-4218-B34E-3B8531299F8B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FT.SFTPUtility", "FT.SFTP\FT.SFTPUtility.csproj", "{B354D2C8-E789-4218-B34E-3B8531299F8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FT.DataServicesSQL", "FTP.DataServices\FT.DataServicesSQL.csproj", "{BFFB129B-F62E-4F37-A520-B213492BD6DE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FT.DataServicesSQL", "FT.DataServicesSQL\FT.DataServicesSQL.csproj", "{BFFB129B-F62E-4F37-A520-B213492BD6DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
