@@ -1,5 +1,5 @@
-﻿using FTP.Helper.Helper;
-using FTP.Helper.Model;
+﻿using FT.Helper.Helper;
+using FT.Helper.Model;
 using Google.Apis.Auth.OAuth2;
 using Google.Apis.Drive.v3;
 using Google.Apis.Services;
@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Threading;
 
-namespace FTP.GoogleDriveService
+namespace FT.GoogleDriveService
 {
     public static class DriveServices
     {
@@ -87,7 +87,7 @@ namespace FTP.GoogleDriveService
             {
                 foreach (var gfile in gfiles)
                 {
-                    FileModel file = new FileModel { Id = gfile.Id, Name = gfile.Name };
+                    FileModel file = new FileModel { FileID = gfile.Id, Name = gfile.Name };
 
                     files.Add(file);
                 }

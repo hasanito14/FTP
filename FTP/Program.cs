@@ -1,38 +1,14 @@
-﻿using FTP.DataStorage;
-using FTP.SFTP;
-namespace FTP
+﻿using FT.SFTPUtility;
+using FTP.DataServicesSQL;
+
+
+namespace FT
 {
     class Program
     {
 
         static void Main(string[] args)
         {
-            /* FOR GOOGLE DRIVE------
-             * 
-            var service = DriveServices.GetAuthenticaticated("credentials/client_secret.json", "KalamKhan.1260");
-
-            var storeService = new StoreService("C:\\ProgramData\\FTPApp\\FTPApp.sqlite");
-
-            var files = DriveServices.GetFiles(service, 20);
-
-            storeService.SaveFiles(files);
-
-            if (files != null && files.Count > 0)
-            {
-                foreach (var file in files)
-                {
-                    Console.WriteLine("{0} ({1})", file.Name, file.Id);
-                    storeService.DownloadFile(file.Name, file.Id);
-
-                }
-            }
-            else
-            {
-                Console.WriteLine("No files found.");
-            }
-            Console.Read();
-            
-             */
 
             //      Load the files from SFTP server
             var sftpService = new SFTPService();
@@ -40,8 +16,14 @@ namespace FTP
 
 
             //      Save file name in database 
-            var storeService = new StoreService("C:\\ProgramData\\FTPApp\\FTPApp.sqlite");
-            storeService.SaveFiles(files);
+
+            //Using SQLite
+            //var storeService = new DataService("C:\\ProgramData\\FTPApp\\FTPApp.sqlite");
+            //storeService.SaveFileInfos(files);
+
+            //Using SQL
+            var service = new DataServices();
+            service.SaveFileInfos(files);
 
             //      Get the filesname from DB
             //----

@@ -1,9 +1,9 @@
 ﻿using System.Data.SQLite;
 
-namespace FTP.DataStorage.Helper
+namespace FT.DataServiceSQLite.Helper
 {
     public static class DBConnection
     {
-        public static readonly SQLiteConnection connection = new SQLiteConnection("Data Source=C:\\ProgramData\\FTPApp\\FTPApp.sqlite;Version=3;");
+        public static readonly SQLiteConnection connection = new SQLiteConnection("Data Source=C:\\ProgramData\\FTApp\\FTApp.sqlite;Version=3;");
     }
 }

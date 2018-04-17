@@ -1,4 +1,4 @@
-﻿namespace FTP.Helper.Helper
+﻿namespace FT.Helper.Helper
 {
     public static class Logger
     {

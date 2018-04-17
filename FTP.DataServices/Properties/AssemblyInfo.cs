@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("FT.SFT")]
+[assembly: AssemblyTitle("FT.DataServices")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("FT.SFT")]
+[assembly: AssemblyProduct("FT.DataServices")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("b354d2c8-e789-4218-b34e-3b8531299f8b")]
+[assembly: Guid("bffb129b-f62e-4f37-a520-b213492bd6de")]
 
 // Version information for an assembly consists of the following four values:
 //

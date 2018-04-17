@@ -88,21 +88,25 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataStorage\FTP.DataStorage.csproj">
+    <ProjectReference Include="..\DataStorage\FT.DataServicesSQLite.csproj">
       <Project>{28a2c864-882a-48ff-8d6b-2d8cf843325e}</Project>
-      <Name>FTP.DataStorage</Name>
+      <Name>FT.DataServicesSQLite</Name>
     </ProjectReference>
-    <ProjectReference Include="..\FTP.Helper\FTP.Helper.csproj">
+    <ProjectReference Include="..\FTP.DataServices\FT.DataServicesSQL.csproj">
+      <Project>{BFFB129B-F62E-4F37-A520-B213492BD6DE}</Project>
+      <Name>FT.DataServicesSQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FTP.Helper\FT.Helper.csproj">
       <Project>{B3CA5CE9-2E81-4BAA-B7E9-4DA66BD70AC7}</Project>
-      <Name>FTP.Helper</Name>
+      <Name>FT.Helper</Name>
     </ProjectReference>
-    <ProjectReference Include="..\FTP.SFTP\FTP.SFTP.csproj">
+    <ProjectReference Include="..\FTP.SFTP\FT.SFTPUtility.csproj">
       <Project>{b354d2c8-e789-4218-b34e-3b8531299f8b}</Project>
-      <Name>FTP.SFTP</Name>
+      <Name>FT.SFTPUtility</Name>
     </ProjectReference>
-    <ProjectReference Include="..\GoogleDriveDownloader\FTP.GoogleDriveService.csproj">
+    <ProjectReference Include="..\GoogleDriveDownloader\FT.GoogleDriveService.csproj">
       <Project>{f1539267-3989-44f1-bd7f-34af126aa6a4}</Project>
-      <Name>FTP.GoogleDriveService</Name>
+      <Name>FT.GoogleDriveService</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

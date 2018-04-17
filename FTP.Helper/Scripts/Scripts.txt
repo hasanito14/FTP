@@ -1,0 +1,50 @@
+﻿IF NOT EXISTS (SELECT name FROM master.dbo.sysdatabases WHERE name = N'TestFT')
+CREATE DATABASE [TestFT]
+GO
+USE [TestFT]  
+GO  
+/****** Object:  Table [dbo].[[FileInfo]]    ******/  
+SET ANSI_NULLS ON  
+GO  
+SET QUOTED_IDENTIFIER ON  
+GO  
+SET ANSI_PADDING ON  
+GO  
+  
+CREATE TABLE [dbo].[FileInfo](
+	[ID] [uniqueidentifier] NOT NULL,  
+    [Name] [varchar](50) NOT NULL,  
+    [Extenstion] [varchar](10) NULL,  
+    [Size] [float](15) NULL  
+) ON [PRIMARY]  
+  
+GO  
+SET ANSI_PADDING OFF  
+GO  
+
+            /* FOR GOOGLE DRIVE------
+             * 
+            var service = DriveServices.GetAuthenticaticated("credentials/client_secret.json", "KalamKhan.1260");
+
+            var storeService = new StoreService("C:\\ProgramData\\FTPApp\\FTPApp.sqlite");
+
+            var files = DriveServices.GetFiles(service, 20);
+
+            storeService.SaveFiles(files);
+
+            if (files != null && files.Count > 0)
+            {
+                foreach (var file in files)
+                {
+                    Console.WriteLine("{0} ({1})", file.Name, file.Id);
+                    storeService.DownloadFile(file.Name, file.Id);
+
+                }
+            }
+            else
+            {
+                Console.WriteLine("No files found.");
+            }
+            Console.Read();
+            
+             */

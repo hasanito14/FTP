@@ -3,6 +3,7 @@ C:\Code\FTP\FTP.Helper\bin\Debug\FTP.Helper.dll
 C:\Code\FTP\FTP.Helper\bin\Debug\FTP.Helper.pdb
 C:\Code\FTP\FTP.Helper\bin\Debug\log4net.dll
 C:\Code\FTP\FTP.Helper\bin\Debug\log4net.xml
-C:\Code\FTP\FTP.Helper\obj\Debug\FTP.Helper.csproj.CoreCompileInputs.cache
+C:\Code\FTP\FTP.Helper\obj\Debug\FT.Helper.csprojResolveAssemblyReference.cache
+C:\Code\FTP\FTP.Helper\obj\Debug\FT.Helper.csproj.CoreCompileInputs.cache
 C:\Code\FTP\FTP.Helper\obj\Debug\FTP.Helper.dll
 C:\Code\FTP\FTP.Helper\obj\Debug\FTP.Helper.pdb

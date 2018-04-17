@@ -1,8 +1,8 @@
-﻿using FTP.DataStorage.Helper;
+﻿using FT.DataServiceSQLite.Helper;
 using System;
 using System.Data.SQLite;
 
-namespace FTP.DataStorage
+namespace FT.DataServiceSQLite
 {
     public static class DBInitiate
     {
@@ -16,8 +16,8 @@ namespace FTP.DataStorage
                 System.IO.FileInfo file = new System.IO.FileInfo(dbPath);
                 file.Directory.Create(); // If the directory already exists, this method does nothing.
 
-                SQLiteConnection.CreateFile("C:\\ProgramData\\FTPApp\\FTPApp.sqlite");
-                //"C:\\ProgramData\\FTPApp\\FTPApp.sqlite"
+                SQLiteConnection.CreateFile("C:\\ProgramData\\FTApp\\FTApp.sqlite");
+                //"C:\\ProgramData\\FTApp\\FTApp.sqlite"
 
                 connection.Open();
 

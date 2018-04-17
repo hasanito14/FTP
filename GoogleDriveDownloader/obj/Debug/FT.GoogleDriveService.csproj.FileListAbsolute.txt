@@ -24,7 +24,7 @@ C:\Code\FTP\GoogleDriveDownloader\bin\Debug\Google.Apis.Core.xml
 C:\Code\FTP\GoogleDriveDownloader\bin\Debug\Google.Apis.Drive.v3.xml
 C:\Code\FTP\GoogleDriveDownloader\bin\Debug\log4net.xml
 C:\Code\FTP\GoogleDriveDownloader\bin\Debug\Newtonsoft.Json.xml
-C:\Code\FTP\GoogleDriveDownloader\obj\Debug\FTP.GoogleDriveService.csprojResolveAssemblyReference.cache
-C:\Code\FTP\GoogleDriveDownloader\obj\Debug\FTP.GoogleDriveService.csproj.CoreCompileInputs.cache
+C:\Code\FTP\GoogleDriveDownloader\obj\Debug\FT.GoogleDriveService.csprojResolveAssemblyReference.cache
+C:\Code\FTP\GoogleDriveDownloader\obj\Debug\FT.GoogleDriveService.csproj.CoreCompileInputs.cache
 C:\Code\FTP\GoogleDriveDownloader\obj\Debug\GoogleDriveDownloader.dll
 C:\Code\FTP\GoogleDriveDownloader\obj\Debug\GoogleDriveDownloader.pdb

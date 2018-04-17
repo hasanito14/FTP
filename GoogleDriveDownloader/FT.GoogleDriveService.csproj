@@ -89,9 +89,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FTP.Helper\FTP.Helper.csproj">
+    <ProjectReference Include="..\FTP.Helper\FT.Helper.csproj">
       <Project>{B3CA5CE9-2E81-4BAA-B7E9-4DA66BD70AC7}</Project>
-      <Name>FTP.Helper</Name>
+      <Name>FT.Helper</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

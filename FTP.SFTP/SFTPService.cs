@@ -1,10 +1,13 @@
-﻿using FTP.Helper.Model;
+﻿using FT.Helper.Helper;
+using FT.Helper.Model;
+using FTP.Helper.Helper;
 using Renci.SshNet;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
 
-namespace FTP.SFTP
+namespace FT.SFTPUtility
 {
     public class SFTPService
     {
@@ -42,14 +45,20 @@ namespace FTP.SFTP
                                             _userName,
                                             new PasswordAuthenticationMethod(_userName, _password),
                                             new PrivateKeyAuthenticationMethod("rsa.key"));
-
-            using (var client = new SftpClient(connectionInfo))
+            try
             {
-                client.Connect();
-                client.ChangeDirectory(_workingDirectory);
-                files = SFTPListFiles(client, _extension);
-                client.Disconnect();
+                using (var client = new SftpClient(connectionInfo))
+                {
+                    client.Connect();
+                    client.ChangeDirectory(_workingDirectory);
+                    files = SFTPListFiles(client, _extension);
+                    client.Disconnect();
 
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.log.Error("Connection to SFTP server failed!!!" + '\n', ex);
             }
 
             return files;
@@ -68,7 +77,7 @@ namespace FTP.SFTP
 
                 if (!file.IsDirectory && ((string.IsNullOrEmpty(ext)) || (!string.IsNullOrEmpty(ext) && FileExt == ext)))
                 {
-                    files.Add(new FileModel { Name = file.Name, Extenstion = FileExt });
+                    files.Add(new FileModel { Name = file.Name, Extention = FileExt });
                 }
 
             }
@@ -115,11 +124,24 @@ namespace FTP.SFTP
         private bool DownloadFile(FileModel file, SftpClient client)
         {
             bool result = false;
-
-            using (Stream fileStream = File.OpenWrite(_lcoalDirectory + file.Name))
+            var path = _lcoalDirectory + file.Name;
+            using (Stream fileStream = File.OpenWrite(path))
             {
                 client.DownloadFile(client.WorkingDirectory + "/" + file.Name, fileStream);
                 result = true;
+            }
+
+            if (result)
+            {
+                result = EncodeFile.Encode(path);
+            }
+            if (!result && File.Exists(path))
+            {
+                File.Delete(path);
+            }
+            if (result)
+            {
+                //UpdateStatus(file.name);
             }
 
             return result;

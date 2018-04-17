@@ -1,21 +1,21 @@
-﻿using FTP.DataStorage.Helper;
-using FTP.Helper.Helper;
-using FTP.Helper.Model;
+﻿using FT.DataServiceSQLite.Helper;
+using FT.Helper.Helper;
+using FT.Helper.Model;
 using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
 using System.Text;
 
-namespace FTP.DataStorage
+namespace FT.DataServiceSQLite
 {
-    public class StoreService
+    public class DataServices
     {
-        public void DownloadFiles(IList<string> files)
+        public void GetFileInfos(IList<string> files)
         {
 
         }
 
-        public bool DownloadFile(string fileName, string fileID)
+        public bool GetFileInfo(string fileName, string fileID)
         {
             bool download = false;
 
@@ -23,7 +23,8 @@ namespace FTP.DataStorage
 
         }
 
-        public bool SaveFiles(List<FileModel> files)
+
+        public bool SaveFileInfos(List<FileModel> files)
         {
             bool saved = false;
 
@@ -37,7 +38,7 @@ namespace FTP.DataStorage
 
                 foreach (var file in files)
                 {
-                    SaveFile(file, cmd, connection);
+                    SaveFileInfo(file, cmd, connection);
                 }
 
                 connection.Close();
@@ -51,14 +52,14 @@ namespace FTP.DataStorage
 
         }
 
-        public bool SaveFile(FileModel file, SQLiteCommand cmd, SQLiteConnection connection)
+        public bool SaveFileInfo(FileModel file, SQLiteCommand cmd, SQLiteConnection connection)
         {
             try
             {
                 using (var transaction = connection.BeginTransaction())
                 {
                     cmd.Parameters.AddWithValue("@Name", file.Name);
-                    cmd.Parameters.AddWithValue("@FileId", file.Id);
+                    cmd.Parameters.AddWithValue("@FileId", file.FileID);
                     cmd.Parameters.AddWithValue("@Status", 1);
                     cmd.Parameters.AddWithValue("@LastModified", DateTime.UtcNow);
                     cmd.ExecuteNonQuery();
@@ -68,7 +69,7 @@ namespace FTP.DataStorage
             }
             catch (Exception)
             {
-                Logger.log.Error(file.Id + ": File information couldnt be saved in DB");
+                Logger.log.Error(file.FileID + ": File information couldnt be saved in DB");
             }
 
 
@@ -82,13 +83,13 @@ namespace FTP.DataStorage
             return sb.ToString();
         }
 
-        public StoreService(string dbPath)
+        public DataServices(string dbPath)
         {
             DBInitiate.Initiate(dbPath);
 
 
         }
-        public StoreService()
+        public DataServices()
         {
 
         }
