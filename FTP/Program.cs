@@ -18,7 +18,7 @@ namespace FT
             //      Save file name in database 
 
             //Using SQLite
-            //var storeService = new DataService("C:\\ProgramData\\FTPApp\\FTPApp.sqlite");
+            //var storeService = new DataServices("C:\\ProgramData\\FTPApp\\FTPApp.sqlite");
             //storeService.SaveFileInfos(files);
 
             //Using SQL
